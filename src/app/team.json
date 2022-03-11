@@ -1,0 +1,24 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Валерия",
+            "age": "число",
+            "description": "lorem1"
+        },
+        
+        {
+            "id": 2,
+            "name": "Даниил",
+            "age": "число",
+            "description": "lorem2"
+        },
+        {
+            "id": 3,
+            "name": "Виктор",
+            "age": "число",
+            "description": "lorem3"
+        }
+        
+    ]
+}
