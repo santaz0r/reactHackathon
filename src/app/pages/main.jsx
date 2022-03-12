@@ -1,10 +1,15 @@
 import React from "react";
+import Card from "../components/card/card.jsx";
 import team from "../team.js";
 
 const Main = () => {
+    console.log(...team);
     return (
-        <>
-            <ul className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center">
+            {team.map((user) => (
+                <Card key={user.id} {...user} />
+            ))}
+            {/* <ul className="d-flex justify-content-center">
                 {team.map((user) => (
                     <div key={user.id}>
                         <img
@@ -20,8 +25,8 @@ const Main = () => {
                         <h4>Немного об участнике: {user.description}</h4>
                     </div>
                 ))}
-            </ul>
-        </>
+            </ul> */}
+        </div>
     );
 };
 

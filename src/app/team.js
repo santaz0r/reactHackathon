@@ -6,10 +6,11 @@ const skills = {
 
 const users = [
     {
-        id: "1",
+        id: 1,
         name: "Валерия",
         age: "число",
-        description: "lorem1",
+        about: "lorem1",
+        photo: "https://avatars.githubusercontent.com/u/57302398?v=4",
         skills: [
             { ...skills.html, value: 50 },
             { ...skills.css, value: 70 },
@@ -20,10 +21,11 @@ const users = [
     },
 
     {
-        id: "2",
+        id: 2,
         name: "Даниил",
         age: "число",
-        description: "lorem2",
+        photo: "https://avatars.githubusercontent.com/u/20718976?v=4",
+        about: "lorem2",
         skills: [
             { ...skills.html, value: 50 },
             { ...skills.css, value: 40 },
@@ -33,10 +35,11 @@ const users = [
         teamLeader: false
     },
     {
-        id: "3",
+        id: 3,
         name: "Виктор",
-        age: "число",
-        description: "lorem3",
+        age: "26",
+        about: "lorem3",
+        photo: "https://inlnk.ru/medJY3",
         skills: [
             { ...skills.html, value: 40 },
             { ...skills.css, value: 30 },

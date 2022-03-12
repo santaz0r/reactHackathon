@@ -7,7 +7,6 @@ import TempCard from "./components/ui/tempCard";
 import Favorites from "./pages/favorites";
 import Main from "./pages/main";
 
-
 function App() {
     return (
         <>
