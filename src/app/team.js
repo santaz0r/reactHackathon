@@ -6,7 +6,7 @@ const skills = {
 
 const users = [
     {
-        id: 1,
+        id: "1",
         name: "Валерия",
         age: "число",
         description: "lorem1",
@@ -20,7 +20,7 @@ const users = [
     },
 
     {
-        id: 2,
+        id: "2",
         name: "Даниил",
         age: "число",
         description: "lorem2",
@@ -33,7 +33,7 @@ const users = [
         teamLeader: false
     },
     {
-        id: 3,
+        id: "3",
         name: "Виктор",
         age: "число",
         description: "lorem3",

@@ -1,5 +1,5 @@
 import React from "react";
-import ProgressBar from "./components/progressBar";
+import ProgressBarList from "./components/progressBarList";
 import users from "./team";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
                                 Открыть карточку
                             </button>
                             <h4>Немного об участнике: {user.description}</h4>
-                            <ProgressBar skills={user.skills} />
+                            <ProgressBarList skills={user.skills} />
                         </div>
                     );
                 })}
