@@ -7,7 +7,6 @@ import TempCard from "./components/ui/tempCard";
 import Favorites from "./pages/favorites";
 import Main from "./pages/main";
 
-
 function App() {
     return (
         <>
@@ -16,7 +15,6 @@ function App() {
                 <Route path="/" exact component={Main} />
                 <Route path="/favorites" component={Favorites} />
                 <Route path="/member/:id?" component={TempCard} />
-
             </Switch>
             <ToastContainer />
         </>
