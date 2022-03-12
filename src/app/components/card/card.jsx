@@ -7,8 +7,6 @@ import { toast } from "react-toastify";
 import Badge from "../common/badge";
 
 const Card = ({ id, name, age, photo, about, teamLeader }) => {
-    console.log(id);
-    console.log(teamLeader);
     const history = useHistory();
     const clickToMemberPage = () => {
         history.push(`/member/${id}`);
