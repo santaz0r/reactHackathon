@@ -6,7 +6,7 @@ const skills = {
 
 const users = [
     {
-        id: 1,
+        id: "1",
         name: "Валерия",
         age: "число",
         description: "lorem1",
@@ -14,11 +14,13 @@ const users = [
             { ...skills.html, value: 50 },
             { ...skills.css, value: 70 },
             { ...skills.react, value: 70 }
-        ]
+        ],
+        favorite: false,
+        teamLeader: false
     },
 
     {
-        id: 2,
+        id: "2",
         name: "Даниил",
         age: "число",
         description: "lorem2",
@@ -26,10 +28,12 @@ const users = [
             { ...skills.html, value: 50 },
             { ...skills.css, value: 40 },
             { ...skills.react, value: 80 }
-        ]
+        ],
+        favorite: false,
+        teamLeader: false
     },
     {
-        id: 3,
+        id: "3",
         name: "Виктор",
         age: "число",
         description: "lorem3",
@@ -37,7 +41,9 @@ const users = [
             { ...skills.html, value: 40 },
             { ...skills.css, value: 30 },
             { ...skills.react, value: 40 }
-        ]
+        ],
+        favorite: false,
+        teamLeader: true
     }
 ];
 
