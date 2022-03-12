@@ -1,21 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Button from "../components/button";
 import Card from "../components/card/card";
 import Breadscrumb from "../components/common/breadscrumb";
-import team from "../team";
+import { StyleSheet, css } from "aphrodite";
+import users from "../team";
 
 const Favorites = () => {
-    const favoriteUsersId = localStorage.getItem("favorite")
-        ? localStorage.getItem("favorite")
-        : [];
-    const favoriteUsers = [];
+    const [favoriteUsers, setFavoriteUsers] = useState([]);
+    const [favoriteUsersId, setFavoriteUsersId] = useState(
+        JSON.parse(localStorage.getItem("favorite"))
+    );
 
-    for (const userId of favoriteUsersId) {
-        for (const user of team) {
-            if (user.id === +userId) {
-                favoriteUsers.push(user);
-            }
+    useEffect(() => {
+        if (favoriteUsersId && favoriteUsersId.length) {
+            favoriteUsersId.forEach((f) => {
+                setFavoriteUsers((prevState) => [
+                    ...prevState,
+                    users.find((u) => u.id === f)
+                ]);
+            });
         }
-    }
+    }, []);
+
+    const handleDelete = (id) => {
+        setFavoriteUsers(favoriteUsers.filter((u) => u.id !== id));
+        setFavoriteUsersId(() => {
+            const newFav = favoriteUsersId.filter((u) => u !== id);
+            localStorage.setItem("favorite", JSON.stringify(newFav));
+            return newFav;
+        });
+    };
+
     return (
         <>
             <Breadscrumb />
@@ -23,7 +38,17 @@ const Favorites = () => {
             <div className="d-flex justify-content-center">
                 {favoriteUsers.length > 0 ? (
                     favoriteUsers.map((user) => (
-                        <Card key={user.id} {...user} />
+                        <div className={css(styles.div)} key={user.id}>
+                            <Card {...user} />
+                            <div className={css(styles.but)}>
+                                <Button
+                                    color="pink"
+                                    name="x"
+                                    handleClick={() => handleDelete(user.id)}
+                                    type="radius"
+                                />
+                            </div>
+                        </div>
                     ))
                 ) : (
                     <h1>Вы никого не добавили в избранное</h1>
@@ -32,5 +57,17 @@ const Favorites = () => {
         </>
     );
 };
+
+const styles = StyleSheet.create({
+    div: {
+        position: "relative"
+    },
+    but: {
+        position: "absolute",
+        top: 0,
+        right: 0,
+        zIndex: 1
+    }
+});
 
 export default Favorites;
