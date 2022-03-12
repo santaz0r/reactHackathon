@@ -1,6 +1,8 @@
 import React from "react";
 import ProgressBar from "./components/progressBar";
 import teamList from "./team.json";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
     return (
@@ -23,6 +25,7 @@ function App() {
                     </div>
                 ))}
             </ul>
+            <ToastContainer />
         </>
     );
 }
