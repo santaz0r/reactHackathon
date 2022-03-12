@@ -4,20 +4,23 @@
             "id": 1,
             "name": "Валерия",
             "age": "число",
-            "description": "lorem1"
+            "description": "lorem1",
+            "skills": [{ "name":"html", "value": 50 }, { "name":"react", "value":  75 }, { "name":"css", "value":  80 }]
         },
         
         {
             "id": 2,
             "name": "Даниил",
             "age": "число",
-            "description": "lorem2"
+            "description": "lorem2",
+            "skills": [{ "name":"html", "value":  60 }, { "name":"react",  "value":  70 }, { "name":"css",  "value":  70 }]
         },
         {
             "id": 3,
             "name": "Виктор",
             "age": "число",
-            "description": "lorem3"
+            "description": "lorem3",
+            "skills": [{ "name":"html",  "value":  30 }, { "name":"react",  "value":  50 }, { "name":"css", "value":  40 }]
         }
         
     ]
