@@ -13,7 +13,6 @@ function App() {
                 <Route path="/" exact component={Main} />
                 <Route path="/favorites" component={Favorites} />
                 <Route path="/member/:id?" component={TempCard} />
-
             </Switch>
         </>
     );

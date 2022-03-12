@@ -1,13 +1,10 @@
 import React from "react";
-
 import team from "../team.js";
-
 
 const Main = () => {
     return (
         <>
             <ul className="d-flex justify-content-center">
-
                 {team.map((user) => (
                     <div key={user.id}>
                         <img
