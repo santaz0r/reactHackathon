@@ -6,8 +6,7 @@ const Button = ({ color, handleClick, name, type }) => {
     const styles = StyleSheet.create({
         button: {
             backgroundColor: "transparent",
-            border: "none",
-            minWidth: "150px"
+            border: "none"
         },
         span: {
             display: "inline-block",
