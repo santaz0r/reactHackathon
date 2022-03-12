@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "../components/slider/slider.jsx";
 import team from "../team.js";
 
 const Main = () => {
@@ -22,9 +21,6 @@ const Main = () => {
                     </div>
                 ))}
             </ul>
-            <div className="container">
-                <Slider />
-            </div>
         </>
     );
 };
