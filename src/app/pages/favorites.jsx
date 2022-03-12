@@ -13,7 +13,6 @@ const Favorites = () => {
         for (const user of team) {
             if (user.id === +userId) {
                 favoriteUsers.push(user);
-                break;
             }
         }
     }
@@ -22,11 +21,13 @@ const Favorites = () => {
             <Breadscrumb />
             <h1>Избранные участники</h1>
             <div className="d-flex justify-content-center">
-                {favoriteUsers
-                    ? favoriteUsers.map((user) => (
-                          <Card key={user.id} {...user} />
-                      ))
-                    : null}
+                {favoriteUsers.length > 0 ? (
+                    favoriteUsers.map((user) => (
+                        <Card key={user.id} {...user} />
+                    ))
+                ) : (
+                    <h1>Вы никого не добавили в избранное</h1>
+                )}
             </div>
         </>
     );

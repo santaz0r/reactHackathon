@@ -6,7 +6,6 @@ const Breadscrumb = ({ name }) => {
     const { id } = useParams();
     const history = useHistory();
     const link = history.location.pathname.replaceAll("/", "");
-    console.log(link);
     return (
         <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
@@ -15,7 +14,7 @@ const Breadscrumb = ({ name }) => {
                 </li>
                 {id ? (
                     <li className="breadcrumb-item active" aria-current="page">
-                        {link} {name}
+                        {link.slice(0, -id.length)} / {name}
                     </li>
                 ) : (
                     <li className="breadcrumb-item active" aria-current="page">
