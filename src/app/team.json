@@ -20,7 +20,10 @@
             "name": "Виктор",
             "age": "число",
             "description": "lorem3",
-            "skills": [{ "name":"html",  "value":  30 }, { "name":"react",  "value":  50 }, { "name":"css", "value":  40 }]
+            "skills": [{ 
+                "name":"html", 
+                 "value":  30 
+                 }, { "name":"react",  "value":  50 }, { "name":"css", "value":  40 }]
         }
         
     ]
