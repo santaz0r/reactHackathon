@@ -14,7 +14,6 @@ const Card = ({ id, name, age, photo, about, teamLeader }) => {
 
     const clickToAddFavorite = () => {
         const favorite = JSON.parse(localStorage.getItem("favorite"));
-        console.log(favorite);
         if (!favorite) {
             localStorage.setItem("favorite", `[${id}]`);
             toast.info("Вы добавили в избранное");
