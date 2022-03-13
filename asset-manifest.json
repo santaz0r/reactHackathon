@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/reactHackathon/static/css/main.553c846d.css",
+    "main.js": "/reactHackathon/static/js/main.814657cf.js",
+    "static/js/787.bb4a444b.chunk.js": "/reactHackathon/static/js/787.bb4a444b.chunk.js",
+    "static/media/remixicon.svg?t=1590207869815": "/reactHackathon/static/media/remixicon.9cedd2150922ead84869.svg",
+    "static/media/tk-portf-2.png": "/reactHackathon/static/media/tk-portf-2.a58fe9f4c0608e399d7d.png",
+    "static/media/tk-portf-1.png": "/reactHackathon/static/media/tk-portf-1.0ec05ed94d2425750cb9.png",
+    "static/media/al-portf-1.png": "/reactHackathon/static/media/al-portf-1.9f1ed21bb24b73d65638.png",
+    "static/media/al-portf-3.png": "/reactHackathon/static/media/al-portf-3.4404861db88f97c04511.png",
+    "static/media/remixicon.eot?t=1590207869815": "/reactHackathon/static/media/remixicon.5cb99e6cba5a4619063f.eot",
+    "static/media/remixicon.ttf?t=1590207869815": "/reactHackathon/static/media/remixicon.f2616f597cf98f38d234.ttf",
+    "static/media/remixicon.woff?t=1590207869815": "/reactHackathon/static/media/remixicon.8d09fa11700ed63cf96e.woff",
+    "static/media/uber.JPG": "/reactHackathon/static/media/uber.499b5b64c5ebd62f8c7d.JPG",
+    "static/media/remixicon.woff2?t=1590207869815": "/reactHackathon/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
+    "static/media/al-portf-2.png": "/reactHackathon/static/media/al-portf-2.591ae8741034b5f06503.png",
+    "static/media/glopt.JPG": "/reactHackathon/static/media/glopt.5bb517743325864339ef.JPG",
+    "static/media/pulse.JPG": "/reactHackathon/static/media/pulse.ec4811eaf28767a711c3.JPG",
+    "static/media/tk-portf-3.png": "/reactHackathon/static/media/tk-portf-3.c271128ecfecf6bd7aa3.png",
+    "static/media/screen_mac.png": "/reactHackathon/static/media/screen_mac.34f0cc8b03ce81e002ba.png",
+    "index.html": "/reactHackathon/index.html",
+    "main.553c846d.css.map": "/reactHackathon/static/css/main.553c846d.css.map",
+    "main.814657cf.js.map": "/reactHackathon/static/js/main.814657cf.js.map",
+    "787.bb4a444b.chunk.js.map": "/reactHackathon/static/js/787.bb4a444b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.553c846d.css",
+    "static/js/main.814657cf.js"
+  ]
+}
