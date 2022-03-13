@@ -16,7 +16,6 @@ const users = [
             { ...skills.css, value: 50 },
             { ...skills.react, value: 75 }
         ],
-        teamLeader: false,
         socialMedia: {
             instagram: "https://www.instagram.com/aller_v/",
             github: "https://github.com/ValeryiaSharova",
@@ -28,6 +27,11 @@ const users = [
             'Компонент "Кнопка"',
             "Удаление из избранного",
             "Страница участника"
+        ],
+        qualities: [
+            { color: "info", content: "Толерантный" },
+            { color: "success", content: "Ответственный" },
+            { color: "primary", content: "Оптимистичный" }
         ]
     },
 
@@ -36,13 +40,12 @@ const users = [
         name: "Ткачук Даниил",
         age: "число",
         photo: "https://avatars.githubusercontent.com/u/20718976?v=4",
-        about: "lorem2",
+        about: "Itaque earum rerum hic tenetur a sapiente delectus, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         skills: [
             { ...skills.html, value: 50 },
             { ...skills.css, value: 40 },
             { ...skills.react, value: 80 }
         ],
-        teamLeader: false,
         socialMedia: {
             twitter: "https://twitter.com/home?lang=ru",
             telegram: "https://web.telegram.org/"
@@ -53,20 +56,24 @@ const users = [
             'Компонент "Кнопка"',
             "Удаление из избранного",
             "Страница участника"
+        ],
+        qualities: [
+            { color: "warning", content: "Рассудительный" },
+            { color: "danger", content: "Ответственный" },
+            { color: "dark", content: "Амбициозный" }
         ]
     },
     {
         id: 3,
         name: "Муравьев Виктор",
         age: "26",
-        about: "lorem3",
+        about: "Itaque earum rerum hic tenetur a sapiente delectus, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         photo: "https://avatars.githubusercontent.com/u/49832619?v=4",
         skills: [
             { ...skills.html, value: 40 },
             { ...skills.css, value: 30 },
             { ...skills.react, value: 40 }
         ],
-        teamLeader: true,
         socialMedia: {
             facebook: "https://ru-ru.facebook.com/",
             github: "https://github.com/santaz0r/reactHackathon",
@@ -78,6 +85,11 @@ const users = [
             'Компонент "Кнопка"',
             "Удаление из избранного",
             "Страница участника"
+        ],
+        qualities: [
+            { color: "success", content: "Лидер команды" },
+            { color: "secondary", content: "Ответственный" },
+            { color: "danger", content: "Трудолюбивый" }
         ]
     }
 ];
