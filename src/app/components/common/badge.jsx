@@ -1,17 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Badge = ({ color, content, teamLeader }) => {
-    return teamLeader ? (
-        <span className={`badge bg-${color} `}>{content}</span>
-    ) : null;
+const Badge = ({ color, content }) => {
+    return <span className={`badge bg-${color} `}>{content}</span>;
 };
 Badge.defaultProps = {
     color: "primary"
 };
 Badge.propTypes = {
     color: PropTypes.string,
-    content: PropTypes.string,
-    teamLeader: PropTypes.bool.isRequired
+    content: PropTypes.string
 };
 export default Badge;

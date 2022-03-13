@@ -6,7 +6,7 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
                 <h1 className="navbar-brand my-0" href="#">
-                    Hackaton
+                    Hackathon
                 </h1>
                 <button
                     className="navbar-toggler"
@@ -22,10 +22,23 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                          <NavLink className="nav-link" activeClassName="nav-link active" to="/" exact>Главная</NavLink>
+                            <NavLink
+                                className="nav-link"
+                                activeClassName="nav-link active"
+                                to="/"
+                                exact
+                            >
+                                Главная
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                          <NavLink className="nav-link" activeClassName="nav-link active" to="/favorites">Избранное</NavLink>
+                            <NavLink
+                                className="nav-link"
+                                activeClassName="nav-link active"
+                                to="/favorites"
+                            >
+                                Избранное
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
