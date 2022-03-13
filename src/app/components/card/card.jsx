@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import Button from "../button";
 import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
-import Badge from "../common/badge";
 
 const Card = ({ id, name, age, photo, about, teamLeader }) => {
     const history = useHistory();
@@ -32,10 +31,7 @@ const Card = ({ id, name, age, photo, about, teamLeader }) => {
             <div className="myCard-header">
                 <div className="myCard-cover"></div>
                 <img className="myCard-avatar" src={photo} alt="avatar" />
-                <h1 className="myCard-fullname">
-                    {name}
-                    {teamLeader && <Badge content="Team leader" />}
-                </h1>
+                <h1 className="myCard-fullname">{name}</h1>
                 <h2 className="myCard-jobtitle">Frontend developer</h2>
             </div>
             <div className="myCard-main">
