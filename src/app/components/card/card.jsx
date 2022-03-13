@@ -33,8 +33,8 @@ const Card = ({ id, name, age, photo, about, teamLeader }) => {
                 <div className="myCard-cover"></div>
                 <img className="myCard-avatar" src={photo} alt="avatar" />
                 <h1 className="myCard-fullname">
-                    {name}{" "}
-                    <Badge content="Team leader" teamLeader={teamLeader} />
+                    {name}
+                    {teamLeader && <Badge content="Team leader" />}
                 </h1>
                 <h2 className="myCard-jobtitle">Frontend developer</h2>
             </div>

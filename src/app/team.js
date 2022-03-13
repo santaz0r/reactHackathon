@@ -7,7 +7,7 @@ const skills = {
 const users = [
     {
         id: 1,
-        name: "Валерия",
+        name: "Шарова Валерия",
         age: "22",
         about: "Работаю преподавателем в колледже по распределению. Увлекаюсь чаем, настольными и компьютерными играми. Люблю читать книги на белорусском и ходить в тренажерный зал.",
         photo: "https://avatars.githubusercontent.com/u/57302398?v=4",
@@ -33,7 +33,7 @@ const users = [
 
     {
         id: 2,
-        name: "Даниил",
+        name: "Ткачук Даниил",
         age: "число",
         photo: "https://avatars.githubusercontent.com/u/20718976?v=4",
         about: "lorem2",
@@ -57,7 +57,7 @@ const users = [
     },
     {
         id: 3,
-        name: "Виктор",
+        name: "Муравьев Виктор",
         age: "26",
         about: "lorem3",
         photo: "https://avatars.githubusercontent.com/u/49832619?v=4",
@@ -69,7 +69,8 @@ const users = [
         teamLeader: true,
         socialMedia: {
             facebook: "https://ru-ru.facebook.com/",
-            github: "https://github.com/santaz0r/reactHackathon"
+            github: "https://github.com/santaz0r/reactHackathon",
+            telegram: "https://t.me/VictorMura"
         },
         whatDoing: [
             'Компонент "Карточка"',
