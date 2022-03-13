@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 const Card = ({ id, name, age, photo, about }) => {
     const history = useHistory();
     const clickToMemberPage = () => {
-        history.push(`/member/${id}`);
+        history.push(`/reactHackathon/member/${id}`);
     };
 
     const clickToAddFavorite = () => {

@@ -12,7 +12,7 @@ const Breadscrumb = ({ name }) => {
         <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
                 <li className={`breadcrumb-item ${opacity}`}>
-                    <Link to="/">{changeText()}</Link>
+                    <Link to="/reactHackathon/">{changeText()}</Link>
                 </li>
                 {id ? (
                     <li
@@ -21,7 +21,7 @@ const Breadscrumb = ({ name }) => {
                     >
                         {changeText(link.slice(0, -id.length))} / {name}
                     </li>
-                ) : link !== "" ? (
+                ) : link === "reactHackathonfavorites" ? (
                     <li
                         className={`breadcrumb-item active ${opacity} `}
                         aria-current="page"

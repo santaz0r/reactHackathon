@@ -30,7 +30,7 @@ const NavBar = () => {
                                     <NavLink
                                         className="nav-link"
                                         activeClassName="nav-link active"
-                                        to="/"
+                                        to="/reactHackathon/"
                                         exact
                                     >
                                         Главная
@@ -40,7 +40,7 @@ const NavBar = () => {
                                     <NavLink
                                         className="nav-link"
                                         activeClassName="nav-link active"
-                                        to="/favorites"
+                                        to="/reactHackathon/favorites"
                                     >
                                         Избранное
                                     </NavLink>

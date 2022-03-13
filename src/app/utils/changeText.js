@@ -1,8 +1,8 @@
 export function changeText(text) {
     switch (text) {
-        case "member":
+        case "reactHackathonmember":
             return "Участник";
-        case "favorites":
+        case "reactHackathonfavorites":
             return "Избранное";
         default:
             return "Главная";

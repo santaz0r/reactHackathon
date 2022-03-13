@@ -12,9 +12,9 @@ function App() {
         <>
             <NavBar />
             <Switch>
-                <Route path="/" exact component={Main} />
-                <Route path="/favorites" component={Favorites} />
-                <Route path="/member/:id?" component={Member} />
+                <Route path="/reactHackathon/" exact component={Main} />
+                <Route path="/reactHackathon/favorites" component={Favorites} />
+                <Route path="/reactHackathon/member/:id?" component={Member} />
             </Switch>
             <ToastContainer />
         </>
