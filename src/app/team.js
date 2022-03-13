@@ -67,12 +67,12 @@ const users = [
         id: 3,
         name: "Муравьев Виктор",
         age: "26",
-        about: "Itaque earum rerum hic tenetur a sapiente delectus, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        about: "Живу и работаю в Тюмени логистом в ночные смены. Кошатник. Занимаюсь мини-футболом и немного видеомонтажом. Хочу сменить профессию и стать frontend разработчиком.",
         photo: "https://avatars.githubusercontent.com/u/49832619?v=4",
         skills: [
             { ...skills.html, value: 40 },
-            { ...skills.css, value: 30 },
-            { ...skills.react, value: 40 }
+            { ...skills.css, value: 40 },
+            { ...skills.react, value: 45 }
         ],
         socialMedia: {
             facebook: "https://ru-ru.facebook.com/",
@@ -80,11 +80,9 @@ const users = [
             telegram: "https://t.me/VictorMura"
         },
         whatDoing: [
-            'Компонент "Карточка"',
-            'Компонент "Социальные сети"',
-            'Компонент "Кнопка"',
-            "Удаление из избранного",
-            "Страница участника"
+            'Компонент "Breadscrump"',
+            'Компонент "Progress Bar"',
+            "Психологическое здоровье команды"
         ],
         qualities: [
             { color: "success", content: "Лидер команды" },
