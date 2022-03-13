@@ -1,6 +1,9 @@
 import tkachukImg1 from "./assets/tk-portf-1.png";
 import tkachukImg2 from "./assets/tk-portf-2.png";
 import tkachukImg3 from "./assets/tk-portf-3.png";
+import mura1 from "./assets/uber.JPG";
+import mura2 from "./assets/pulse.JPG";
+import mura3 from "./assets/glopt.JPG";
 import allerImg1 from "./assets/al-portf-1.png";
 import allerImg2 from "./assets/al-portf-2.png";
 import allerImg3 from "./assets/al-portf-3.png";
@@ -126,16 +129,16 @@ const users = [
         ],
         sliderData: [
             {
-                imgSrc: tkachukImg1,
-                title: "Сайт под ключ zion-rus.com"
+                imgSrc: mura1,
+                title: "Верстка учебного макета для знакомства с html&css"
             },
             {
-                imgSrc: tkachukImg2,
-                title: "Сайт под ключ и поддержка intelmag.com.ua"
+                imgSrc: mura2,
+                title: "Верстка учебного макета для знакомства с html&css и немного JS"
             },
             {
-                imgSrc: tkachukImg3,
-                title: "Калькулятор для выбора размера скейтов"
+                imgSrc: mura3,
+                title: "Самостоятельная верстка по макету"
             }
         ]
     }
