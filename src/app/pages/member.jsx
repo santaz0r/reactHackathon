@@ -11,7 +11,7 @@ const Member = () => {
     const member = users.find((u) => u.id === Number(id));
     return (
         <>
-            <Breadscrumb name={id} />
+            <Breadscrumb name={member.name} />
             <div className="container">
                 <header className={css(styles.header)}>
                     <img

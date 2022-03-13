@@ -60,7 +60,7 @@ const users = [
         name: "Виктор",
         age: "26",
         about: "lorem3",
-        photo: "https://inlnk.ru/medJY3",
+        photo: "https://avatars.githubusercontent.com/u/49832619?v=4",
         skills: [
             { ...skills.html, value: 40 },
             { ...skills.css, value: 30 },
