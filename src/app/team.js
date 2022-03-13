@@ -4,6 +4,9 @@ import tkachukImg3 from "./assets/tk-portf-3.png";
 import mura1 from "./assets/uber.JPG";
 import mura2 from "./assets/pulse.JPG";
 import mura3 from "./assets/glopt.JPG";
+import allerImg1 from "./assets/al-portf-1.png";
+import allerImg2 from "./assets/al-portf-2.png";
+import allerImg3 from "./assets/al-portf-3.png";
 
 const skills = {
     html: { id: "1", name: "HTML", color: "progress-bar-striped bg-success" },
@@ -42,16 +45,16 @@ const users = [
         ],
         sliderData: [
             {
-                imgSrc: tkachukImg1,
-                title: "Сайт под ключ zion-rus.com"
+                imgSrc: allerImg1,
+                title: "Сайт по продаже настольных игр"
             },
             {
-                imgSrc: tkachukImg2,
-                title: "Сайт под ключ и поддержка intelmag.com.ua"
+                imgSrc: allerImg2,
+                title: "Рулетка оценок"
             },
             {
-                imgSrc: tkachukImg3,
-                title: "Калькулятор для выбора размера скейтов"
+                imgSrc: allerImg3,
+                title: "Цветочный магазин"
             }
         ]
     },
