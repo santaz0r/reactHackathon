@@ -13,7 +13,7 @@ const Member = () => {
     const member = users.find((u) => u.id === Number(id));
     return (
         <>
-            <div className="container py-3">
+            <div className="container pt-3 pb-5">
                 <div className="row py-3">
                     <Breadscrumb name={member.name} />
                 </div>
@@ -78,7 +78,7 @@ const Member = () => {
                 </div>
                 <div className="row py-3">
                     <div className={css(styles.margin)}>
-                        <h2 className={css(styles.center)}>
+                        <h2 className={css([styles.center, styles.title])}>
                             Что было выполнено
                         </h2>
                         <ul>
@@ -89,7 +89,9 @@ const Member = () => {
                     </div>
                 </div>
                 <div className="row py-3">
-                    <h2 className={css(styles.center)}>Портфолио</h2>
+                    <h2 className={css([styles.center, styles.title])}>
+                        Портфолио
+                    </h2>
                     <MockupSlider sliderData={member.sliderData} />
                 </div>
             </div>
@@ -129,6 +131,9 @@ const styles = StyleSheet.create({
         width: "50%",
         margin: "0 auto",
         justifyContent: "space-around"
+    },
+    title: {
+        marginBottom: "1.5rem"
     }
 });
 
