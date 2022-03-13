@@ -1,7 +1,7 @@
 import React from "react";
 import "./card.scss";
 import PropTypes from "prop-types";
-import Button from "../button";
+import Button from "../common/button";
 import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
 

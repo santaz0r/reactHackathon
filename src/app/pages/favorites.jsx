@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Button from "../components/button";
+import Button from "../components/common/button";
 import Card from "../components/card/card";
 import Breadscrumb from "../components/common/breadscrumb";
 import { StyleSheet, css } from "aphrodite";
