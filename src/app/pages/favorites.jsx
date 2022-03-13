@@ -34,26 +34,33 @@ const Favorites = () => {
     return (
         <>
             <Breadscrumb />
-            <h1>Избранные участники</h1>
-            <div className="d-flex justify-content-center">
-                {favoriteUsers.length > 0 ? (
-                    favoriteUsers.map((user) => (
-                        <div className={css(styles.div)} key={user.id}>
-                            <Card {...user} />
-                            <div className={css(styles.but)}>
-                                <Button
-                                    color="pink"
-                                    name="x"
-                                    handleClick={() => handleDelete(user.id)}
-                                    type="radius"
-                                />
+
+            {favoriteUsers.length > 0 ? (
+                <div>
+                    <h1 className="text-center">Избранные участники</h1>
+                    <div className="d-flex justify-content-center">
+                        {favoriteUsers.map((user) => (
+                            <div className={css(styles.div)} key={user.id}>
+                                <Card {...user} />
+                                <div className={css(styles.but)}>
+                                    <Button
+                                        color="pink"
+                                        name="x"
+                                        handleClick={() =>
+                                            handleDelete(user.id)
+                                        }
+                                        type="radius"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                    ))
-                ) : (
-                    <h1>Вы никого не добавили в избранное</h1>
-                )}
-            </div>
+                        ))}
+                    </div>
+                </div>
+            ) : (
+                <h1 className="text-center">
+                    Вы никого не добавили в избранное
+                </h1>
+            )}
         </>
     );
 };
