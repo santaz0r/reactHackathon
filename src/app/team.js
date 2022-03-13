@@ -8,16 +8,27 @@ const users = [
     {
         id: 1,
         name: "Валерия",
-        age: "число",
-        about: "lorem1",
+        age: "22",
+        about: "Работаю преподавателем в колледже по распределению. Увлекаюсь чаем, настольными и компьютерными играми. Люблю читать книги на белорусском и ходить в тренажерный зал.",
         photo: "https://avatars.githubusercontent.com/u/57302398?v=4",
         skills: [
-            { ...skills.html, value: 50 },
-            { ...skills.css, value: 70 },
-            { ...skills.react, value: 70 }
+            { ...skills.html, value: 85 },
+            { ...skills.css, value: 50 },
+            { ...skills.react, value: 75 }
         ],
-        favorite: false,
-        teamLeader: false
+        teamLeader: false,
+        socialMedia: {
+            instagram: "https://www.instagram.com/aller_v/",
+            github: "https://github.com/ValeryiaSharova",
+            telegram: "https://t.me/Aller_Fl"
+        },
+        whatDoing: [
+            'Компонент "Карточка"',
+            'Компонент "Социальные сети"',
+            'Компонент "Кнопка"',
+            "Удаление из избранного",
+            "Страница участника"
+        ]
     },
 
     {
@@ -31,8 +42,18 @@ const users = [
             { ...skills.css, value: 40 },
             { ...skills.react, value: 80 }
         ],
-        favorite: false,
-        teamLeader: false
+        teamLeader: false,
+        socialMedia: {
+            twitter: "https://twitter.com/home?lang=ru",
+            telegram: "https://web.telegram.org/"
+        },
+        whatDoing: [
+            'Компонент "Карточка"',
+            'Компонент "Социальные сети"',
+            'Компонент "Кнопка"',
+            "Удаление из избранного",
+            "Страница участника"
+        ]
     },
     {
         id: 3,
@@ -45,8 +66,18 @@ const users = [
             { ...skills.css, value: 30 },
             { ...skills.react, value: 40 }
         ],
-        favorite: false,
-        teamLeader: true
+        teamLeader: true,
+        socialMedia: {
+            facebook: "https://ru-ru.facebook.com/",
+            github: "https://github.com/santaz0r/reactHackathon"
+        },
+        whatDoing: [
+            'Компонент "Карточка"',
+            'Компонент "Социальные сети"',
+            'Компонент "Кнопка"',
+            "Удаление из избранного",
+            "Страница участника"
+        ]
     }
 ];
 
