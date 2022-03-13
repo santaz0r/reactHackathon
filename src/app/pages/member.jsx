@@ -5,6 +5,7 @@ import Breadscrumb from "../components/common/breadscrumb";
 import users from "../team";
 import ProgressBarList from "../components/ui/progressBarList";
 import { StyleSheet, css } from "aphrodite";
+import Badge from "../components/common/badge";
 
 const Member = () => {
     const { id } = useParams();
@@ -28,11 +29,22 @@ const Member = () => {
                         <p className={css(styles.secondaryInfo)}>
                             {member.about}
                         </p>
+                        <h4 className={css(styles.center)}>Качества</h4>
+                        <div className={css(styles.qualities)}>
+                            {member.qualities.map((q) => (
+                                <Badge
+                                    color={q.color}
+                                    content={q.content}
+                                    key={q.color}
+                                />
+                            ))}
+                        </div>
                         <div className={css([styles.center, styles.margin])}>
                             <SocialMedia socialMediaList={member.socialMedia} />
                         </div>
                     </div>
                 </header>
+                <h1 className={css(styles.center)}>Навыки</h1>
                 <ProgressBarList skills={member.skills} />
                 <div className={css(styles.margin)}>
                     <h1 className={css(styles.center)}>Что было выполнено</h1>
@@ -67,6 +79,10 @@ const styles = StyleSheet.create({
     },
     margin: {
         marginTop: "20px"
+    },
+    qualities: {
+        display: "flex",
+        justifyContent: "space-around"
     }
 });
 
