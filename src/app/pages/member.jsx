@@ -1,0 +1,89 @@
+import React from "react";
+import { useParams } from "react-router-dom";
+import SocialMedia from "../socialMedia/socialMedia";
+import Breadscrumb from "../components/common/breadscrumb";
+import users from "../team";
+import ProgressBarList from "../components/ui/progressBarList";
+import { StyleSheet, css } from "aphrodite";
+import Badge from "../components/common/badge";
+
+const Member = () => {
+    const { id } = useParams();
+    const member = users.find((u) => u.id === Number(id));
+    return (
+        <>
+            <Breadscrumb name={member.name} />
+            <div className="container">
+                <header className={css(styles.header)}>
+                    <img
+                        className={css(styles.avatar)}
+                        src={member.photo}
+                        alt="My photo"
+                    />
+                    <div className={css(styles.info)}>
+                        <h4 className={css(styles.center)}>Имя</h4>
+                        <p className={css(styles.center)}>{member.name}</p>
+                        <h4 className={css(styles.center)}>Возраст:</h4>
+                        <p className={css(styles.center)}>{member.age}</p>
+                        <h4 className={css(styles.center)}>О себе:</h4>
+                        <p className={css(styles.secondaryInfo)}>
+                            {member.about}
+                        </p>
+                        <h4 className={css(styles.center)}>Качества</h4>
+                        <div className={css(styles.qualities)}>
+                            {member.qualities.map((q) => (
+                                <Badge
+                                    color={q.color}
+                                    content={q.content}
+                                    key={q.color}
+                                />
+                            ))}
+                        </div>
+                        <div className={css([styles.center, styles.margin])}>
+                            <SocialMedia socialMediaList={member.socialMedia} />
+                        </div>
+                    </div>
+                </header>
+                <h1 className={css(styles.center)}>Навыки</h1>
+                <ProgressBarList skills={member.skills} />
+                <div className={css(styles.margin)}>
+                    <h1 className={css(styles.center)}>Что было выполнено</h1>
+                    <ul>
+                        {member.whatDoing.map((task) => (
+                            <li key={task}>{task}</li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+        </>
+    );
+};
+
+const styles = StyleSheet.create({
+    header: {
+        display: "flex"
+    },
+    avatar: {
+        height: "250px",
+        borderRadius: "50%"
+    },
+    info: {
+        marginLeft: "20px",
+        marginBottom: "20px"
+    },
+    secondaryInfo: {
+        textAlign: "justify"
+    },
+    center: {
+        textAlign: "center"
+    },
+    margin: {
+        marginTop: "20px"
+    },
+    qualities: {
+        display: "flex",
+        justifyContent: "space-around"
+    }
+});
+
+export default Member;
