@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ProgressBar from "./progressBar";
+import ProgressBar from "../common/progressBar";
 
 const ProgressBarList = ({ skills }) => {
     return (

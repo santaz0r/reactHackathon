@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Button from "../components/button";
+import Button from "../components/common/button";
 import Card from "../components/card/card";
 import Breadscrumb from "../components/common/breadscrumb";
 import { StyleSheet, css } from "aphrodite";
@@ -33,34 +33,42 @@ const Favorites = () => {
 
     return (
         <>
-            <Breadscrumb />
-
-            {favoriteUsers.length > 0 ? (
-                <div>
-                    <h1 className="text-center">Избранные участники</h1>
-                    <div className="d-flex justify-content-center">
-                        {favoriteUsers.map((user) => (
-                            <div className={css(styles.div)} key={user.id}>
-                                <Card {...user} />
-                                <div className={css(styles.but)}>
-                                    <Button
-                                        color="pink"
-                                        name="x"
-                                        handleClick={() =>
-                                            handleDelete(user.id)
-                                        }
-                                        type="radius"
-                                    />
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+            <div className="container py-3">
+                <div className="row py-3">
+                    <Breadscrumb />
                 </div>
-            ) : (
-                <h1 className="text-center">
-                    Вы никого не добавили в избранное
-                </h1>
-            )}
+                <div className="row py-3">
+                    {favoriteUsers.length > 0 ? (
+                        <div>
+                            <h1 className="text-center">Избранные участники</h1>
+                            <div className="d-flex justify-content-center">
+                                {favoriteUsers.map((user) => (
+                                    <div
+                                        className={css(styles.div)}
+                                        key={user.id}
+                                    >
+                                        <Card {...user} />
+                                        <div className={css(styles.but)}>
+                                            <Button
+                                                color="pink"
+                                                name="X"
+                                                handleClick={() =>
+                                                    handleDelete(user.id)
+                                                }
+                                                type="round"
+                                            />
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ) : (
+                        <h1 className="text-center">
+                            Вы никого не добавили в избранное
+                        </h1>
+                    )}
+                </div>
+            </div>
         </>
     );
 };
@@ -71,8 +79,8 @@ const styles = StyleSheet.create({
     },
     but: {
         position: "absolute",
-        top: 0,
-        right: 0,
+        top: "0px",
+        right: "-10px",
         zIndex: 1
     }
 });
