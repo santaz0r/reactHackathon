@@ -51,11 +51,11 @@ const Favorites = () => {
                                         <div className={css(styles.but)}>
                                             <Button
                                                 color="pink"
-                                                name="x"
+                                                name="X"
                                                 handleClick={() =>
                                                     handleDelete(user.id)
                                                 }
-                                                type="radius"
+                                                type="round"
                                             />
                                         </div>
                                     </div>
@@ -79,8 +79,8 @@ const styles = StyleSheet.create({
     },
     but: {
         position: "absolute",
-        top: 0,
-        right: 0,
+        top: "0px",
+        right: "-10px",
         zIndex: 1
     }
 });
