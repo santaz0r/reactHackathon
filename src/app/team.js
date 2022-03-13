@@ -1,3 +1,7 @@
+import tkachukImg1 from "./assets/tk-portf-1.png";
+import tkachukImg2 from "./assets/tk-portf-2.png";
+import tkachukImg3 from "./assets/tk-portf-3.png";
+
 const skills = {
     html: { id: "1", name: "HTML", color: "progress-bar-striped bg-success" },
     css: { id: "2", name: "CSS", color: "progress-bar-striped bg-warning" },
@@ -32,6 +36,20 @@ const users = [
             { color: "info", content: "Толерантный" },
             { color: "success", content: "Ответственный" },
             { color: "primary", content: "Оптимистичный" }
+        ],
+        sliderData: [
+            {
+                imgSrc: tkachukImg1,
+                title: "Сайт под ключ zion-rus.com"
+            },
+            {
+                imgSrc: tkachukImg2,
+                title: "Сайт под ключ и поддержка intelmag.com.ua"
+            },
+            {
+                imgSrc: tkachukImg3,
+                title: "Калькулятор для выбора размера скейтов"
+            }
         ]
     },
 
@@ -61,6 +79,20 @@ const users = [
             { color: "warning", content: "Рассудительный" },
             { color: "danger", content: "Ответственный" },
             { color: "success", content: "Независимый" }
+        ],
+        sliderData: [
+            {
+                imgSrc: tkachukImg1,
+                title: "Сайт под ключ zion-rus.com"
+            },
+            {
+                imgSrc: tkachukImg2,
+                title: "Сайт под ключ и поддержка intelmag.com.ua"
+            },
+            {
+                imgSrc: tkachukImg3,
+                title: "Калькулятор для выбора размера скейтов"
+            }
         ]
     },
     {
@@ -88,6 +120,20 @@ const users = [
             { color: "success", content: "Лидер команды" },
             { color: "secondary", content: "Ответственный" },
             { color: "danger", content: "Трудолюбивый" }
+        ],
+        sliderData: [
+            {
+                imgSrc: tkachukImg1,
+                title: "Сайт под ключ zion-rus.com"
+            },
+            {
+                imgSrc: tkachukImg2,
+                title: "Сайт под ключ и поддержка intelmag.com.ua"
+            },
+            {
+                imgSrc: tkachukImg3,
+                title: "Калькулятор для выбора размера скейтов"
+            }
         ]
     }
 ];
