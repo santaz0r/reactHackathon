@@ -5,7 +5,7 @@ import Button from "../button";
 import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
 
-const Card = ({ id, name, age, photo, about, teamLeader }) => {
+const Card = ({ id, name, age, photo, about }) => {
     const history = useHistory();
     const clickToMemberPage = () => {
         history.push(`/member/${id}`);
@@ -67,8 +67,7 @@ Card.propTypes = {
     name: PropTypes.string.isRequired,
     age: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
     photo: PropTypes.string.isRequired,
-    about: PropTypes.string.isRequired,
-    teamLeader: PropTypes.bool.isRequired
+    about: PropTypes.string.isRequired
 };
 
 export default Card;
