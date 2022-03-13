@@ -38,29 +38,29 @@ const users = [
     {
         id: 2,
         name: "Ткачук Даниил",
-        age: "число",
+        age: "36",
         photo: "https://avatars.githubusercontent.com/u/20718976?v=4",
-        about: "Itaque earum rerum hic tenetur a sapiente delectus, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        about: "Кодер-сёрфер. Более 9 лет живу вне России. Жил в Индонезии, на Шри-Ланке, Филиппинах и Мальдивах. Сейчас 4 месяц живу в Турции. Люблю кодить, серфить, мотоциклы и гитары.",
         skills: [
-            { ...skills.html, value: 50 },
-            { ...skills.css, value: 40 },
-            { ...skills.react, value: 80 }
+            { ...skills.html, value: 80 },
+            { ...skills.css, value: 80 },
+            { ...skills.react, value: 40 }
         ],
         socialMedia: {
-            twitter: "https://twitter.com/home?lang=ru",
-            telegram: "https://web.telegram.org/"
+            github: "https://github.com/tkachukcha",
+            telegram: "https://t.me/tkachukcha",
+            instagram: "https://instagram.com/tkachukcha"
         },
         whatDoing: [
-            'Компонент "Карточка"',
-            'Компонент "Социальные сети"',
-            'Компонент "Кнопка"',
-            "Удаление из избранного",
-            "Страница участника"
+            'Компонент "Навигационная панель"',
+            'Компонент "Бэйдж"',
+            'Компонент "Слайдер"',
+            "Общий лэйаут"
         ],
         qualities: [
             { color: "warning", content: "Рассудительный" },
             { color: "danger", content: "Ответственный" },
-            { color: "dark", content: "Амбициозный" }
+            { color: "success", content: "Независимый" }
         ]
     },
     {
