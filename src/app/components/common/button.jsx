@@ -13,7 +13,6 @@ const Button = ({ color, handleClick, name, type }) => {
             fontSize: "10px",
             fontWeight: 600,
             textTransform: "uppercase",
-            borderRadius: type === "radius" ? "50px" : "0",
             width: "100%",
             padding: "10px",
             backgroundColor: color,
@@ -21,11 +20,35 @@ const Button = ({ color, handleClick, name, type }) => {
                 color: color,
                 backgroundColor: "black"
             }
+        },
+        radius: {
+            borderRadius: "50px"
+        },
+        round: {
+            display: "grid",
+            placeItems: "center",
+            borderRadius: "50%",
+            width: "32px",
+            height: "32px",
+            padding: "5px 12px"
+            // fontSize: "0.8rem"
         }
     });
+    let classes = null;
+    switch (type) {
+        case "round":
+            classes = [styles.span, styles.round];
+            break;
+        case "radius":
+            classes = [styles.span, styles.radius];
+            break;
+        default:
+            classes = styles.span;
+            break;
+    }
     return (
         <button className={css(styles.button)} onClick={handleClick}>
-            <span className={css(styles.span)}>{name}</span>
+            <span className={css(classes)}>{name}</span>
         </button>
     );
 };

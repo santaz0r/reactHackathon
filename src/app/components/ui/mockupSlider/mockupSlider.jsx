@@ -1,11 +1,11 @@
 import React from "react";
-import screen from "./assets/screen_mac.png";
+import screen from "./screen_mac.png";
 import Slider from "./slider/slider";
 import PropTypes from "prop-types";
 
-const MockupSlider = ({ sliderData }) => {
+const MockupSlider = ({ sliderData, width }) => {
     return (
-        <div className="w-50 mx-auto" style={{ position: "relative" }}>
+        <div className="mx-auto" style={{ position: "relative", width }}>
             <img className="w-100" src={screen} />
             <div
                 style={{
@@ -25,10 +25,12 @@ MockupSlider.defaultProps = {
     sliderData: {
         imgSrc: "",
         title: ""
-    }
+    },
+    width: "75%"
 };
 MockupSlider.propTypes = {
-    sliderData: PropTypes.array.isRequired
+    sliderData: PropTypes.array.isRequired,
+    width: PropTypes.string
 };
 
 export default MockupSlider;

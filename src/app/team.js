@@ -1,3 +1,13 @@
+import tkachukImg1 from "./assets/tk-portf-1.png";
+import tkachukImg2 from "./assets/tk-portf-2.png";
+import tkachukImg3 from "./assets/tk-portf-3.png";
+import mura1 from "./assets/uber.JPG";
+import mura2 from "./assets/pulse.JPG";
+import mura3 from "./assets/glopt.JPG";
+import allerImg1 from "./assets/al-portf-1.png";
+import allerImg2 from "./assets/al-portf-2.png";
+import allerImg3 from "./assets/al-portf-3.png";
+
 const skills = {
     html: { id: "1", name: "HTML", color: "progress-bar-striped bg-success" },
     css: { id: "2", name: "CSS", color: "progress-bar-striped bg-warning" },
@@ -32,6 +42,20 @@ const users = [
             { color: "info", content: "Толерантный" },
             { color: "success", content: "Ответственный" },
             { color: "primary", content: "Оптимистичный" }
+        ],
+        sliderData: [
+            {
+                imgSrc: allerImg1,
+                title: "Сайт по продаже настольных игр"
+            },
+            {
+                imgSrc: allerImg2,
+                title: "Рулетка оценок"
+            },
+            {
+                imgSrc: allerImg3,
+                title: "Цветочный магазин"
+            }
         ]
     },
 
@@ -61,6 +85,20 @@ const users = [
             { color: "warning", content: "Рассудительный" },
             { color: "danger", content: "Ответственный" },
             { color: "success", content: "Независимый" }
+        ],
+        sliderData: [
+            {
+                imgSrc: tkachukImg1,
+                title: "Сайт под ключ zion-rus.com"
+            },
+            {
+                imgSrc: tkachukImg2,
+                title: "Сайт под ключ и поддержка intelmag.com.ua"
+            },
+            {
+                imgSrc: tkachukImg3,
+                title: "Калькулятор для выбора размера скейтов"
+            }
         ]
     },
     {
@@ -88,6 +126,20 @@ const users = [
             { color: "success", content: "Лидер команды" },
             { color: "secondary", content: "Ответственный" },
             { color: "danger", content: "Трудолюбивый" }
+        ],
+        sliderData: [
+            {
+                imgSrc: mura1,
+                title: "Верстка учебного макета для знакомства с html&css"
+            },
+            {
+                imgSrc: mura2,
+                title: "Верстка учебного макета для знакомства с html&css и немного JS"
+            },
+            {
+                imgSrc: mura3,
+                title: "Самостоятельная верстка по макету"
+            }
         ]
     }
 ];
